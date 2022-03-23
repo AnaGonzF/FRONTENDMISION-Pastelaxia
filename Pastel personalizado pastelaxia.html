@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica HTML: Pastelaxia, LaunchX, pastel personalizado</title>
+</head>
+<body>
+    <img src="C:\Users\annie\Documents\LAUNCH X\Frontend\Semana 2 - Primer vuelo\LOGO colores corporativos\1x\Logotipo cc positivo.png" alt="Logotipo pastelaxia">
+    <h1>Pastelaxia</h1>
+    <h2>¡Bienvenides a su pastelería espacial!</h2>
+
+    <hr>
+
+    <h3>¡Hora de armar tu propio pastel Pastelaxia!</h3>
+    
+    <h4>Primero escoge el tamaño de tu pastel</h4>
+    <select id="tamaño" name="tamaño">
+        <option value="pequeño">Pequeño $120 MXN</option>
+        <option value="mediano">Mediano $270 MXN</option>
+        <option value="grande">Grande $400 MXN</option>
+    </select>
+    <br>
+    <P>*Ten en cuenta que, si eliges más de dos opciones en sabores, colores, rellenos, acompañamientos, el pastel subirá de precio. Así también, si quieres agregar algún adorno el pastel subirá de precio.</P>
+
+    <h4>Escoge el sabor de tu bizcocho</h4>
+    <input type="checkbox" id="fresa" name="bizcochos" value="Fresa">
+    <label for="fresa">Fresa</label><br>
+    <input type="checkbox" id="chocolate" name="bizcochos" value="Chocolate">
+    <label for="chocolate">Chocolate</label><br>
+    <input type="checkbox" id="limon" name="bizcochos" value="Limon">
+    <label for="limon">Limón</label><br>
+    <input type="checkbox" id="naranja" name="bizcochos" value="Naranja">
+    <label for="naranja">Naranja</label><br>
+    <input type="checkbox" id="vainilla" name="bizcochos" value="Vainilla">
+    <label for="vainilla">Vainilla</label>
+    <p>*El máximo de sabores de bizcocho para respetar el precio inicial es uno, si quieres agregar otro(s) se sumará la cantidad de $50 MXN por cada sabor agregado.</p>
+
+    <h4>Escoge el relleno de tu pastel</h4>
+    <input type="checkbox" id="crema" name="relleno" value="Crema">
+    <label for="crema">Crema pastelera</label>
+        <label for="crema"> </label>
+        <select id="crema" name="crema">
+            <option value="chocolate">Chocolate</option>
+            <option value="fresa">Fresa</option>
+            <option value="pina">Piña</option>
+            <option value="natural">Natural</option>
+    </select>
+<br>
+    <input type="checkbox" id="mermelada" name="relleno" value="Mermelada">
+    <label for="mermelada">Mermelada</label>
+        <label for="mermelada"> </label>
+        <select id="mermelada" name="mermelada">
+            <option value="naranja">Naranja</option>
+            <option value="fresa">Fresa</option>
+            <option value="pina">Piña</option>
+            <option value="durazno">Durazno</option>
+            <option value="mora">Mora Azul</option>
+            <option value="zarzamora">Zarzamora</option>
+    </select>
+<br>
+    <input type="checkbox" id="ganache" name="relleno" value="Ganache">
+    <label for="ganache">Ganache</label><br>
+    <p>*El máximo de rellenos de pastel para respetar el precio inicial es uno, si quieres agregar otro(s) se sumará la cantidad de $30 MXN por cada relleno agregado.</p>
+
+    <h4>Escoge el acompañamiento para el relleno de tu pastel</h4>
+    <input type="checkbox" id="trozosf" name="acompanamiento_relleno" value="trozosf">
+    <label for="trozosf">Trozos de fruta</label>
+        <label for="trozosf"> </label>
+        <select id="trozosf" name="trozosf">
+            <option value="naranja">Naranja</option>
+            <option value="fresa">Fresa</option>
+            <option value="pina">Piña</option>
+            <option value="durazno">Durazno</option>
+            <option value="mora">Mora Azul</option>
+            <option value="zarzamora">Zarzamora</option>
+    </select>
+    <br>
+    <input type="checkbox" id="trozosc" name="acompanamiento_relleno" value="trozosc">
+    <label for="trozosc">Trozos de chocolate</label>
+    <br>
+    <input type="checkbox" id="trozosn" name="acompanamiento_relleno" value="trozosn">
+    <label for="trozosn">Trozos de nuez</label>
+    <br>
+    <input type="checkbox" id="trozosa" name="acompanamiento_relleno" value="trozosa">
+    <label for="trozosa">Trozos de almendras</label>
+<p>* El máximo de acompañamientos de relleno para respetar el precio inicial es uno, si quieres agregar otro(s) se sumará la cantidad de $30 MXN por cada acompañamiento agregado.</p>
+
+<h4>Escoge la cubierta de tu pastel</h4>
+<input type="checkbox" id="caramelo" name="cubierta" value="Caramelo">
+<label for="caramelo">Caramelo suave</label>
+<br>
+<input type="checkbox" id="fondant" name="cubierta" value="Fondant">
+<label for="fondant">Fondant</label>
+    <label for="fondant"> </label>
+        <select id="fondant" name="Fondant">
+            <option value="naranja">Naranja</option>
+            <option value="azul">Azul</option>
+            <option value="rosa">Rosa</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="cafe">Café</option>
+            <option value="hueso">Hueso</option>
+            <option value="negro">Negro</option>
+            <option value="morado">Morado</option>
+        </select>
+<br>
+<input type="checkbox" id="crema" name="cubierta" value="Crema">
+<label for="crema">Crema pastelera</label>
+    <label for="crema"> </label>
+        <select id="crema" name="crema">
+            <option value="chocolate">Chocolate</option>
+            <option value="fresa">Fresa</option>
+            <option value="pina">Piña</option>
+            <option value="natural">Natural</option>
+        </select>
+    <br>
+<input type="checkbox" id="merengue" name="cubierta" value="Merengue">
+<label for="merengue">Merengue</label>
+    <label for="merengue"> </label>
+        <select id="merengue" name="merengue">
+            <option value="chocolate">Chocolate</option>
+            <option value="fresa">Fresa</option>
+            <option value="pina">Piña</option>
+            <option value="natural">Natural</option>
+        </select>
+    <br>
+<input type="checkbox" id="glaseado" name="cubierta" value="Glaseado">
+<label for="glaseado">Glaseado</label>
+    <label for="glaseado"> </label>
+        <select id="glaseado" name="glaseado">
+            <option value="naranja">Naranja</option>
+            <option value="azul">Azul</option>
+            <option value="rosa">Rosa</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="cafe">Café</option>
+            <option value="hueso">Hueso</option>
+            <option value="negro">Negro</option>
+            <option value="morado">Morado</option>
+        </select>
+    <br>
+<input type="checkbox" id="glaseadoe" name="cubierta" value="Glaseadoe">
+<label for="glaseadoe">Glaseado tipo espejo</label>
+    <label for="glaseadoe"> </label>
+        <select id="glaseadoe" name="glaseadoe">
+            <option value="naranja">Naranja</option>
+            <option value="azul">Azul</option>
+            <option value="rosa">Rosa</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="cafe">Café</option>
+            <option value="hueso">Hueso</option>
+            <option value="negro">Negro</option>
+            <option value="morado">Morado</option>
+        </select>
+    <br>
+<p>*El máximo de cubiertas para que el precio inicial se respete es de una, si quieres agregar más de un color o sabor en tu opción, se agregará $15 MXN por cada color o sabor agregado.</p>
+
+<h4>Escoge el acompañamiento de la cubierta de tu pastel</h4>
+<input type="checkbox" id="frutas" name="acompanamiento_cubierta" value="Frutas">
+<label for="frutas">Frutas</label>
+    <label for="frutas"> </label>
+        <select id="frutas" name="Frutas">
+            <option value="naranja">Naranja</option>
+            <option value="fresa">Fresa</option>
+            <option value="pina">Piña</option>
+            <option value="durazno">Durazno</option>
+            <option value="mora">Mora Azul</option>
+            <option value="zarzamora">Zarzamora</option>
+            <option value="manzana">Manzana</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="uva">Uva</option>
+            <option value="cereza">Cereza</option>
+            <option value="mango">Mango</option>
+        </select>
+<br>
+<input type="checkbox" id="trozosc" name="acompanamiento_cubierta" value="Trozosc">
+<label for="trozosc">Trozos de chocolate</label><br>
+<input type="checkbox" id="nueces" name="acompanamiento_cubierta" value="Nueces">
+<label for="nueces">Nueces</label><br>
+<input type="checkbox" id="almendras" name="acompanamiento_cubierta" value="Almendras">
+<label for="almendras">Almendras</label><br>
+<input type="checkbox" id="coco" name="acompanamiento_cubierta" value="Coco">
+<label for="coco">Coco rallado</label><br>
+<p>* El máximo de acompañamiento de cubierta para que se respete el precio inicial es uno, si quieres agregar otro(s) se sumará la cantidad de $25 MXN por cada acompañamiento agregado.</p>
+
+<h4>Escoge el adorno que llevará tu pastel</h4>
+<input type="checkbox" id="felicitacionc" name="adorno" value="FelicitaciónC">
+<label for="felicitacionc">Felicitaciones en cinta $25 MXN</label><br>
+<input type="checkbox" id="felicitacionb" name="adorno" value="FelicitaciónB">
+<label for="felicitacionb">Felicitaciones en barras de chocolate $35 MXN</label><br>
+<input type="checkbox" id="tarjetac" name="adorno" value="TarjetaC">
+<label for="tarjetac">Trjeta comestible $30 MXN</label><br>
+<input type="checkbox" id="mariposas" name="adorno" value="Mariposas">
+<label for="mariposas">6 Mariposas comestibles $60 MXN</label>
+    <label for="mariposas"> </label>
+        <select id="mariposas" name="Mariposas">
+            <option value="naranja">Naranja</option>
+            <option value="azul">Azul</option>
+            <option value="rosa">Rosa</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="morado">Morado</option>
+        </select>
+<br>
+<input type="checkbox" id="letreronc" name="adorno" value="LetreroNC">
+<label for="letreronc">Letrero no comestible $15 MXN</label><br>
+<input type="checkbox" id="letreroc name="adorno" value="LetreroC">
+<label for="letreroc">Letrero comestible $35 MXN</label><br>
+<input type="checkbox" id="diamantinayperlas" name="adorno" value="DiamantinayPerlas">
+<label for="diamantinayperlas">Diamantina y perlas $30 MXN</label>
+    <label for="diamantinayperlas"> </label>
+        <select id="mariposas" name="Mariposas">
+            <option value="naranja">Naranja</option>
+            <option value="azul">Azul</option>
+            <option value="rosa">Rosa</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="morado">Morado</option>
+            <option value="plata">Plata</option>
+            <option value="oro">Oro</option>
+        </select>
+<br><br>
+
+<hr>
+
+<p>Ahora, para proceder al pago, identíficate con los siguientes datos:</p>
+ 
+<label for="nombre1">Escribe tu nombre y tu apellido</label><br>
+<input type="name" id="nombre1" name="nombre1"><br><br>
+
+<label for="correo1">Escribe tu dirección de correo electrónico</label><br>
+<input type="email" id="correo1" name="correo1"><br><br>
+
+<label for="tel1">Escribe los 10 dígitos de tu número telefónico</label><br>
+<input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+<hr>
+
+    <P>Éstos son los detalles de tu pedido:</P>
+    <p>Tamaño del pastel:<br>
+        Bizcocho:<br>
+        Relleno de pastel:<br>
+        Acompañamiento del relleno:<br>
+        Cubierta:<br>
+        Acompañamiento de la cubierta:<br>
+        Adorno:<br>
+        Costo total:
+    </p>
+
+<a href="direccion de entrega">Proceder a la dirección de entrega</a><br><br>
+<hr>
+    <p>Dirección: VENUSTIANO CARRANZA 4036 NO. 17, VILLA OLIMPICA, 25230, Coahuila, México</p>
+    <P>Teléfono: 844.415-4576/744.428-8729</P>
+    <p>Horarios de antención: Lunes a viernes de 9:00 a 18:00 hrs, sábados y domingos de 10:00 a 17:00 hrs</p>
+
+    
+</body>
+</html>
